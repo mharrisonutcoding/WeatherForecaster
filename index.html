@@ -33,13 +33,14 @@
       </div>
       <div class="card-body">
         <h5 class="card-title">Let's See What The Forecast Looks Like!</h5>
-        <p class="card-text">
+        <p class="card-directions">
           Type in the name of the City that you want, hit search, and BOOM!
         </p>
         <div class="input-group">
           <input
             type="search"
             class="form-control rounded"
+            id="city-input"
             placeholder="Search"
             aria-label="Search"
             aria-describedby="search-addon"
@@ -51,7 +52,7 @@
         </div>
       </div>
     </div>
-
+    <!--Current Weather-->
     <div class="card card-weather" id="current-weather">
       <div class="card-body">
         <div class="weather-date-location">
@@ -68,32 +69,33 @@
         </div>
       </div>
     </div>
-    <div class="card-body border">
+    <!--Weekly Forecast-->
+    <div class="card-body" id="week-card">
       <div class="d-flex weakly-weather" id="week-block">
-        <div class="weakly-item">
-          <p class="mb-2">Sun</p>
-          <i class="mdi mdi-weather-cloudy"></i>
-          <p class="mb-2">30&deg;</p>
+        <div class="mini-card" id="weekly-item">
+          <p class="mb-2" id="date">Sun</p>
+          <img src="" alt="" class="img" />
+          <p class="mb-2" id="temp">30&deg;</p>
         </div>
-        <div class="weakly-item">
-          <p class="mb-2">Mon</p>
-          <i class="mdi mdi-weather-hail"></i>
-          <p class="mb-0">31&deg;</p>
+        <div class="mini-card" id="weekly-item">
+          <p class="mb-2" id="date">Mon</p>
+          <img src="" alt="" class="img" />
+          <p class="mb-2" id="temp">31&deg;</p>
         </div>
-        <div class="weakly-item">
-          <p class="mb-2">Tue</p>
-          <i class="mdi mdi-weather-partlycloudy"></i>
-          <p class="mb-2">28&deg;</p>
+        <div class="mini-card" id="weekly-item">
+          <p class="mb-2" id="date">Tue</p>
+          <img src="" alt="" class="img" />
+          <p class="mb-2" id="temp">28&deg;</p>
         </div>
-        <div class="weakly-item">
-          <p class="mb-2">Wed</p>
-          <i class="mdi mdi-weather-pouring"></i>
-          <p class="mb-2">30&deg;</p>
+        <div class="mini-card" id="weekly-item">
+          <p class="mb-2" id="date">Wed</p>
+          <img src="" alt="" class="img" />
+          <p class="mb-2" id="temp">30&deg;</p>
         </div>
-        <div class="weakly-item">
-          <p class="mb-2">Thu</p>
-          <i class="mdi mdi-weather-pouring"></i>
-          <p class="mb-2">29&deg;</p>
+        <div class="mini-card" id="weekly-item">
+          <p class="mb-2" id="date">Thu</p>
+          <img src="" alt="" class="img" />
+          <p class="mb-2" id="temp">29&deg;</p>
         </div>
       </div>
     </div>
