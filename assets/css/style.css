@@ -10,18 +10,23 @@ h1 {
   text-align: center;
 }
 #city-search {
+  display: flex;
   margin: 5px;
-  width: auto;
   align-items: center;
+  justify-content: center;
 }
-.card {
-  width: 100%;
+.card-body {
   height: fit-content;
   margin: 10px;
+  justify-content: center;
+  align-items: center;
 }
 #week-block {
+  display: flex;
   justify-content: space-between;
-  margin: 20px 0 20px 0;
+  margin: 20px;
+  text-align: center;
+  
 }
 .input-group {
   display: flex;
@@ -29,6 +34,16 @@ h1 {
   align-items: center;
 }
 #current-weather {
-    display: flex;
-    justify-content: center;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  text-align: center;
+}
+.card-week {
+  display: flex;
+  justify-content: center;
+  
+}
+.border {
+    margin: 5px;
 }
