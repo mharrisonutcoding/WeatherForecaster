@@ -27,28 +27,24 @@
       <h1 class="title">5 Day Weather Dashboard</h1>
     </header>
     <!--City Lookup Form-->
-    <div class="card text-center" id="city-search">
+    <div class="card text-center" id="citySearch-card">
       <div class="card-header">
         <h3>City Search</h3>
       </div>
       <div class="card-body">
-        <h5 class="card-title">Let's See What The Forecast Looks Like!</h5>
-        <p class="card-directions">
-          Type in the name of the City that you want, hit search, and BOOM!
-        </p>
-        <div class="input-group">
+        <h5>Let's See What The Forecast Looks Like!</h5>
+        <form class="city-search">
           <input
             type="search"
-            class="form-control rounded"
+            class="form-input rounded"
             id="city-input"
-            placeholder="Search"
+            placeholder="Search for City"
             aria-label="Search"
-            aria-describedby="search-addon"
           />
-          <button type="button" class="btn btn-outline-primary">Search</button>
-        </div>
-        <div class="card-footer" id="recent-searches">
-          <ul class="list-group" id="recent-searches"></ul>
+          <button type="submit" class="btn btn-outline-primary" id="search-button">Search</button>
+        </form>
+        <div class="card-footer" id="history">
+          <ul class="list-group" id="search-history"></ul>
         </div>
       </div>
     </div>
@@ -69,33 +65,44 @@
         </div>
       </div>
     </div>
-    <!--Weekly Forecast-->
+    <!-- Weekly Forecast Days 1 - 5 -->
     <div class="card-body" id="week-card">
+        <h4>Weekly Forecast</h4>
       <div class="d-flex weakly-weather" id="week-block">
         <div class="mini-card" id="weekly-item">
-          <p class="mb-2" id="date">Sun</p>
+          <p class="mb-3" id="date">Sun</p>
           <img src="" alt="" class="img" />
-          <p class="mb-2" id="temp">30&deg;</p>
+          <p class="mb-2 mt-2" id="temp">30&deg;</p>
+          <p class="mb-2" id="wind"></p>
+          <p class="mb-1" id="uv-index"></p>
         </div>
         <div class="mini-card" id="weekly-item">
-          <p class="mb-2" id="date">Mon</p>
+          <p class="mb-3" id="date">Mon</p>
           <img src="" alt="" class="img" />
-          <p class="mb-2" id="temp">31&deg;</p>
+          <p class="mb-2 mt-2" id="temp">31&deg;</p>
+          <p class="mb-2" id="wind"></p>
+          <p class="mb-1" id="uv-index"></p>
         </div>
         <div class="mini-card" id="weekly-item">
-          <p class="mb-2" id="date">Tue</p>
+          <p class="mb-3" id="date">Tue</p>
           <img src="" alt="" class="img" />
-          <p class="mb-2" id="temp">28&deg;</p>
+          <p class="mb-2 mt-2" id="temp">28&deg;</p>
+          <p class="mb-2" id="wind"></p>
+          <p class="mb-1" id="uv-index"></p>
         </div>
         <div class="mini-card" id="weekly-item">
-          <p class="mb-2" id="date">Wed</p>
+          <p class="mb-3" id="date">Wed</p>
           <img src="" alt="" class="img" />
-          <p class="mb-2" id="temp">30&deg;</p>
+          <p class="mb-2 mt-2" id="temp">30&deg;</p>
+          <p class="mb-2" id="wind"></p>
+          <p class="mb-1" id="uv-index"></p>
         </div>
         <div class="mini-card" id="weekly-item">
-          <p class="mb-2" id="date">Thu</p>
+          <p class="mb-3" id="date">Thu</p>
           <img src="" alt="" class="img" />
-          <p class="mb-2" id="temp">29&deg;</p>
+          <p class="mb-2 mt-2" id="temp">29&deg;</p>
+          <p class="mb-2" id="wind">sd</p>
+          <p class="mb-1" id="uv-index">sd</p>
         </div>
       </div>
     </div>
