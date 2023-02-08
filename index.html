@@ -33,15 +33,15 @@
       </div>
       <div class="card-body">
         <h5>Let's See What The Forecast Looks Like!</h5>
-        <form class="city-search">
+        <form class="city-form" id="city-search">
           <input
-            type="search"
+            type="text"
             class="form-input rounded"
             id="city-input"
             placeholder="Search for City"
             aria-label="Search"
           />
-          <button type="submit" class="btn btn-outline-primary" id="search-button">Search</button>
+          <button type="submit" class="btn btn-outline-primary" id="fetchButton">Search</button>
         </form>
         <div class="card-footer" id="history">
           <ul class="list-group" id="search-history"></ul>
